@@ -4,3 +4,7 @@ ports:
 tasks:
     - command: >
         npm i vercel -g
+
+vscode:
+  extensions:
+    - coenraads.bracket-pair-colorizer@1.0.61:fa3401caa00b5b4897921a5ddb2cd8cd
