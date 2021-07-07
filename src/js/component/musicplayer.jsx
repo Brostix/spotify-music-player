@@ -76,7 +76,7 @@ function MusicPlayer() {
 						id="musicplayer"
 						// ref="audio_tag"
 						src={SOUND_URL.concat(musicAudio)}
-						// controls
+						controls
 						// muted
 						autoPlay
 					/>{" "}
