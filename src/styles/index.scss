@@ -1,12 +1,82 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+#app{
+    background-color: black;
+}
+
 .container{
 padding-top: 1rem;
 padding-bottom: 1rem;
 border-radius: 3rem;
-background-color: blue;
+background-color: black;
 }
 
-.repro{
-    background-color: black;
+.img-title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.img-box{
+    width: 12rem;
+    height: 7rem;
+}
+
+.title-box{
+     color: #1ed660;
+     font-weight: 700;
+}
+.title-tab{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #1ed660;
+    margin-left: 1rem;
+
+}
+
+.song-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    font-weight: 4rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #151515ad;
+    padding: 0.5rem;
+
+}
+// .song-list:hover{
+//     color: #1ed660;
+// }
+
+.button-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.button-size{
+    color: black;
+    background-color: #1ed660;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.button-size:hover{
+    color: white;
+   
+}
+
+@media only screen and (max-width: 1240px) , (max-width: 100%) {
+
+.img-title-box{
+    display: flex;
+    flex-direction: column;
+}
+.title-box{
+    font-size: 1.3rem;
+}
+
 }
