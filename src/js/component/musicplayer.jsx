@@ -30,23 +30,18 @@ function MusicPlayer() {
 
 	const songlist = songList.map((oneSong, index) => {
 		return (
-			<div
-				className={
-					SOUND_URL.concat(index.toString()) == urlSong
-						? "onPlaying"
-						: "onPause"
-				}
+			<li
+				className="onPlaying"
 				key={oneSong.url}
 				onClick={() => {
 					setUrlSong(SOUND_URL.concat(oneSong.url));
-
 					setMyIndex(index);
 					setplaySong(true);
 					AUDIO.load();
 					AUDIO.play();
 				}}>
 				{oneSong.name}
-			</div>
+			</li>
 		);
 	});
 
@@ -78,7 +73,7 @@ function MusicPlayer() {
 			AUDIO.load();
 			AUDIO.play();
 		} else {
-			newurl = SOUND_URL.concat(songList[21].url);
+			newurl = SOUND_URL.concat(songList[21 - 1].url);
 			setUrlSong(newurl);
 			setMyIndex(0);
 			AUDIO.load();

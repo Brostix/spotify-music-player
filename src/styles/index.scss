@@ -42,14 +42,28 @@ background-color: black;
     border-radius: 2rem;
     font-weight: 4rem;
     font-size: 1rem;
-    color: white;
     background-color: #151515ad;
     padding: 0.5rem;
 
 }
-// .song-list:hover{
-//     color: #1ed660;
-// }
+
+li{
+    list-style: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.onPlaying{
+    display: flex;
+}
+
+.onPlaying:hover{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #1ed660;
+    border-radius: 0.3rem;
+    width: 10rem;
+}
 
 .button-box{
     display: flex;
