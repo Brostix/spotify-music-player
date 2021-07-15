@@ -73,9 +73,9 @@ function MusicPlayer() {
 			AUDIO.load();
 			AUDIO.play();
 		} else {
-			newurl = SOUND_URL.concat(songList[21 - 1].url);
+			newurl = SOUND_URL.concat(songList[songList.length - 1].url);
 			setUrlSong(newurl);
-			setMyIndex(0);
+			setMyIndex(songList.length - 1);
 			AUDIO.load();
 			AUDIO.play();
 		}
